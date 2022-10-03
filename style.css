@@ -32,9 +32,9 @@ body {
 
 header {
   margin-top: 0%;
-  padding-inline: 3%;
-  width: 100%;
   box-sizing: border-box;
+  width: 100%;
+  padding-inline: 3%;
   background: #F8FAFC;
 }
 header h1 {
@@ -65,10 +65,13 @@ header section#about-me-contacts ul#contacts {
        column-gap: 0.5em;
   row-gap: 0.5em;
   width: 50%;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 header section#about-me-contacts ul#contacts li {
   list-style-position: inside;
   align-self: stretch;
+  white-space: nowrap;
 }
 header section#about-me-contacts ul#contacts li#email {
   list-style-image: url(Images/iconEmail.svg);
@@ -96,7 +99,7 @@ header section#about-me-contacts ul#contacts li#inter-exchange a img {
 }
 
 h2.section-name {
-  margin-top: 0.25em;
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.75em;
   font-weight: 600;
@@ -104,38 +107,14 @@ h2.section-name {
 
 main > section {
   padding-inline: 3%;
-  margin-bottom: 3em;
+  margin-block: 2em;
 }
 
-main section#skills ul.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: flex-start;
-  align-content: flex-start;
-  width: 50%;
-  padding-inline: 0;
-  margin-top: 1.25rem;
-  margin-bottom: 2.5em;
-  margin-left: 2.5rem;
-  margin-right: 0%;
-}
-main section#skills ul.boxes li {
-  list-style-type: none;
-  display: block;
-  margin-right: 1.5em;
-  margin-bottom: 1.5em;
-  padding: 0.5em;
-  background-color: #0F172A;
-  border-radius: 0.25em;
-}
-main section#skills ul.boxes li a {
-  text-decoration: none;
-  color: #F8FAFC;
-}
 main section#skills section#skill-boxes {
   display: flex;
   flex-flow: row wrap;
+  margin-top: 1em;
+  padding-left: 2.5rem;
 }
 main section#skills section#skill-boxes div.flex-row {
   display: flex;
@@ -148,7 +127,7 @@ main section#skills section#skill-boxes div.flex-row {
 }
 main section#skills section#skill-boxes figure.skill {
   flex: auto;
-  min-height: 10em;
+  min-height: 7em;
   box-sizing: content-box;
   margin: 0 1em 1em 0;
   padding: 0.25em;
@@ -164,6 +143,7 @@ main section#skills section#skill-boxes figure.skill h3 {
   margin-inline: auto;
   text-align: center;
   text-decoration: underline;
+  font-weight: 700;
 }
 main section#skills section#skill-boxes figure.skill figcaption {
   box-sizing: border-box;
@@ -171,6 +151,14 @@ main section#skills section#skill-boxes figure.skill figcaption {
 }
 main section#work-experience section.work p {
   padding-inline: 2.5rem;
+}
+main section#personal section#info {
+  padding-inline: 3%;
+  margin-top: 1em;
+}
+main section#personal section#info ul {
+  margin-top: 0%;
+  padding: 0%;
 }
 
 figure.header-caption {
@@ -184,4 +172,12 @@ figure.header-caption h3 {
 figure.header-caption figcaption {
   font-style: italic;
   color: #475569;
+}
+
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  padding-inline: 3%;
+  background: #F8FAFC;
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */
