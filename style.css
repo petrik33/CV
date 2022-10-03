@@ -135,15 +135,22 @@ main section#skills ul.boxes li a {
 }
 main section#skills section#skill-boxes {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+}
+main section#skills section#skill-boxes div.flex-row {
+  display: flex;
+  flex-flow: row;
+}
+@media (orientation: portrait) {
+  main section#skills section#skill-boxes div.flex-row {
+    flex-wrap: wrap;
+  }
 }
 main section#skills section#skill-boxes figure.skill {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: content;
+  flex: auto;
+  min-height: 10em;
   box-sizing: content-box;
-  margin: 0% 1em 1.5em 0%;
+  margin: 0 1em 1em 0;
   padding: 0.25em;
   border: 2px solid #0F172A;
   border-radius: 2%;
@@ -154,13 +161,13 @@ main section#skills section#skill-boxes figure.skill h3 {
   width: max-content;
   margin-top: 0em;
   margin-bottom: 0.5em;
-  margin-inline: 0%;
-  text-align: left;
+  margin-inline: auto;
+  text-align: center;
   text-decoration: underline;
 }
 main section#skills section#skill-boxes figure.skill figcaption {
   box-sizing: border-box;
-  min-height: 12em;
+  text-align: justify;
 }
 main section#work-experience section.work p {
   padding-inline: 2.5rem;
