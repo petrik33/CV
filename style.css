@@ -117,9 +117,9 @@ main section#skills section#skill-boxes {
   padding-inline: 2.5rem;
 }
 main section#skills section#skill-boxes figure.skill {
-  flex: 0 1 14em;
+  flex: 0 1 13em;
   box-sizing: border-box;
-  height: 19em;
+  height: 16em;
   margin: 0 1em 1em 0;
   padding: 0.25em;
   border: 2px solid #0F172A;
