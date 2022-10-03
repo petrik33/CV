@@ -91,7 +91,7 @@ header section#about-me-contacts ul#contacts li#inter-exchange a {
 }
 header section#about-me-contacts ul#contacts li#inter-exchange a img {
   position: relative;
-  top: 3px;
+  top: 2px;
   left: -1px;
   height: 100%;
   display: inline-block;
@@ -114,21 +114,12 @@ main section#skills section#skill-boxes {
   display: flex;
   flex-flow: row wrap;
   margin-top: 1em;
-  padding-left: 2.5rem;
-}
-main section#skills section#skill-boxes div.flex-row {
-  display: flex;
-  flex-flow: row;
-}
-@media (orientation: portrait) {
-  main section#skills section#skill-boxes div.flex-row {
-    flex-wrap: wrap;
-  }
+  padding-inline: 2.5rem;
 }
 main section#skills section#skill-boxes figure.skill {
-  flex: auto;
-  min-height: 7em;
-  box-sizing: content-box;
+  flex: 0 1 14em;
+  box-sizing: border-box;
+  height: 19em;
   margin: 0 1em 1em 0;
   padding: 0.25em;
   border: 2px solid #0F172A;
@@ -140,20 +131,20 @@ main section#skills section#skill-boxes figure.skill h3 {
   width: max-content;
   margin-top: 0em;
   margin-bottom: 0.5em;
-  margin-inline: auto;
-  text-align: center;
+  text-align: left;
   text-decoration: underline;
   font-weight: 700;
 }
 main section#skills section#skill-boxes figure.skill figcaption {
   box-sizing: border-box;
   text-align: justify;
+  padding-left: 1em;
 }
 main section#work-experience section.work p {
   padding-inline: 2.5rem;
 }
 main section#personal section#info {
-  padding-inline: 3%;
+  padding-inline: 2.5rem;
   margin-top: 1em;
 }
 main section#personal section#info ul {

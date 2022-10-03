@@ -103,7 +103,7 @@ header {
                     height: 1em;
                     img {
                         position: relative;
-                        top: 3px;
+                        top: 2px;
                         left: -1px;
                         height: 100%;
                         display: inline-block;
@@ -129,28 +129,16 @@ main > section {
 
 main {
     section#skills {
-
         section#skill-boxes {
             display: flex;
             flex-flow: row wrap;
             margin-top: 1em;
-            padding-left: 2.5rem;
-
-            div.flex-row {
-                display: flex;
-                flex-flow: row;
-            }
-
-            @media (orientation: portrait) {
-                div.flex-row {
-                    flex-wrap: wrap;
-                }
-            }
+            padding-inline: 2.5rem;
 
             figure.skill {
-                flex: auto;
-                min-height: 7em;
-                box-sizing: content-box;
+                flex: 0 1 14em;
+                box-sizing: border-box;
+                height: 19em;
                 margin: 0 1em 1em 0;
                 padding: 0.25em;
 
@@ -161,8 +149,7 @@ main {
                     width: max-content;
                     margin-top: 0em;
                     margin-bottom: 0.5em;
-                    margin-inline: auto;
-                    text-align: center;
+                    text-align: left;
                     text-decoration: underline;
                     font-weight: 700;
                 }
@@ -170,6 +157,7 @@ main {
                 figcaption {
                     box-sizing: border-box;
                     text-align: justify;
+                    padding-left: 1em;
                 }
             }
         }
@@ -185,7 +173,7 @@ main {
 
     section#personal {
         section#info {
-            padding-inline: 3%;
+            padding-inline: 2.5rem;
             margin-top: 1em;
             ul {
                 margin-top: 0%;
