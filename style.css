@@ -163,6 +163,7 @@ main section#personal section#info ul {
 
 figure.header-caption {
   margin-inline: 0%;
+  margin-bottom: 1.25em;
   padding-inline: 2.5rem;
 }
 figure.header-caption h3 {
