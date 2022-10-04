@@ -12,19 +12,19 @@ html {
 
 h1 {
     font-size: 2.5em;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 120%;
 }
 
 h2 {
     font-size: 1.75em;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 143%;
 }
 
 h3 {
     font-size: 1.33em;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 body {
@@ -67,9 +67,14 @@ header {
             text-align: start;
         }
 
-        p#birth-date {
+        ul#personal-info {
+            padding: 0%;
             margin-top: 0%;
             text-align: start;
+
+            li {
+                list-style-type: none;
+            }
         }
         
 
@@ -142,14 +147,13 @@ main {
             padding-inline: 2.5rem;
 
             figure.skill {
-                flex: 0 1 13em;
+                flex: 1 1 30em;
                 box-sizing: border-box;
-                height: 16em;
-                margin: 0 1em 1em 0;
+                margin: 0 1.5em 1.5em 0;
                 padding: 0.25em;
 
                 border: 2px solid #0F172A;
-                border-radius: 2%;
+                border-radius: 0%;
 
                 h3 {
                     width: max-content;
@@ -161,7 +165,6 @@ main {
                 }
 
                 figcaption {
-                    box-sizing: border-box;
                     text-align: justify;
                     padding-left: 1em;
                 }
@@ -170,7 +173,12 @@ main {
     }
 
     section#work-experience {
-        section.work {   
+        section.work {
+            figure.header-caption {
+                h3 {
+                    font-weight: 600;
+                }
+            }   
             p {
                 padding-inline: 2.5rem;
             }
@@ -205,11 +213,25 @@ figure.header-caption {
 }
 
 footer {
-    box-sizing: border-box;
-    width: 100%;
+    background: #F8FAFC;
     padding-inline: 3%;
 
-    background: #F8FAFC;
-    
-    text-align: right;
+    h2 {
+        margin-bottom: 0.75em;
+    }
+
+    ol {
+        padding: 0%;
+
+        li {
+            list-style-position: inside;
+        }
+    }
+
+    div#copyright {
+        box-sizing: border-box;
+        width: 100%;
+
+        text-align: right;
+    }
 }

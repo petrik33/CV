@@ -9,19 +9,19 @@ html {
 
 h1 {
   font-size: 2.5em;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 120%;
 }
 
 h2 {
   font-size: 1.75em;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 143%;
 }
 
 h3 {
   font-size: 1.33em;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 body {
@@ -57,9 +57,13 @@ header section#about-me-contacts {
 header section#about-me-contacts article#about-me {
   text-align: start;
 }
-header section#about-me-contacts p#birth-date {
+header section#about-me-contacts ul#personal-info {
+  padding: 0%;
   margin-top: 0%;
   text-align: start;
+}
+header section#about-me-contacts ul#personal-info li {
+  list-style-type: none;
 }
 header section#about-me-contacts ul#contacts {
   display: grid;
@@ -121,13 +125,12 @@ main section#skills section#skill-boxes {
   padding-inline: 2.5rem;
 }
 main section#skills section#skill-boxes figure.skill {
-  flex: 0 1 13em;
+  flex: 1 1 30em;
   box-sizing: border-box;
-  height: 16em;
-  margin: 0 1em 1em 0;
+  margin: 0 1.5em 1.5em 0;
   padding: 0.25em;
   border: 2px solid #0F172A;
-  border-radius: 2%;
+  border-radius: 0%;
 }
 main section#skills section#skill-boxes figure.skill h3 {
   width: -webkit-max-content;
@@ -140,9 +143,11 @@ main section#skills section#skill-boxes figure.skill h3 {
   font-weight: 700;
 }
 main section#skills section#skill-boxes figure.skill figcaption {
-  box-sizing: border-box;
   text-align: justify;
   padding-left: 1em;
+}
+main section#work-experience section.work figure.header-caption h3 {
+  font-weight: 600;
 }
 main section#work-experience section.work p {
   padding-inline: 2.5rem;
@@ -170,9 +175,20 @@ figure.header-caption figcaption {
 }
 
 footer {
+  background: #F8FAFC;
+  padding-inline: 3%;
+}
+footer h2 {
+  margin-bottom: 0.75em;
+}
+footer ol {
+  padding: 0%;
+}
+footer ol li {
+  list-style-position: inside;
+}
+footer div#copyright {
   box-sizing: border-box;
   width: 100%;
-  padding-inline: 3%;
-  background: #F8FAFC;
   text-align: right;
 }/*# sourceMappingURL=style.css.map */
