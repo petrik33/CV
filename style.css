@@ -1,7 +1,7 @@
 html {
   padding: 0%;
   margin: 0%;
-  font-size: 14px;
+  font-size: 15px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   color: #0F172A;
@@ -49,12 +49,16 @@ header h2 {
 }
 header section#about-me-contacts {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
 }
 header section#about-me-contacts article#about-me {
+  text-align: start;
+}
+header section#about-me-contacts p#birth-date {
+  margin-top: 0%;
   text-align: start;
 }
 header section#about-me-contacts ul#contacts {
