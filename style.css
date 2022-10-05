@@ -118,13 +118,16 @@ main > section {
   margin-block: 2em;
 }
 
-main section#skills section#skill-boxes {
+main section#skills {
+  margin-bottom: 0.5em;
+}
+main section#skills div#skill-boxes {
   display: flex;
   flex-flow: row wrap;
   margin-top: 1em;
   padding-inline: 2.5rem;
 }
-main section#skills section#skill-boxes figure.skill {
+main section#skills div#skill-boxes figure.skill {
   flex: 1 1 30em;
   box-sizing: border-box;
   margin: 0 1.5em 1.5em 0;
@@ -132,7 +135,7 @@ main section#skills section#skill-boxes figure.skill {
   border: 2px solid #0F172A;
   border-radius: 0%;
 }
-main section#skills section#skill-boxes figure.skill h3 {
+main section#skills div#skill-boxes figure.skill h3 {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -142,7 +145,7 @@ main section#skills section#skill-boxes figure.skill h3 {
   text-decoration: underline;
   font-weight: 700;
 }
-main section#skills section#skill-boxes figure.skill figcaption {
+main section#skills div#skill-boxes figure.skill figcaption {
   text-align: justify;
   padding-left: 1em;
 }

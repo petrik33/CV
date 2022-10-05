@@ -140,7 +140,8 @@ main > section {
 
 main {
     section#skills {
-        section#skill-boxes {
+        margin-bottom: calc(2em - 1.5em);
+        div#skill-boxes {
             display: flex;
             flex-flow: row wrap;
             margin-top: 1em;
