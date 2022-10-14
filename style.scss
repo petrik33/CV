@@ -52,6 +52,10 @@ header {
         margin-top: 0.1em;
         margin-bottom: 0.75em;
         text-align: start;
+
+        #wat-header {
+            font-style: italic;
+        }
     }
 
     section#about-me-contacts {
@@ -154,7 +158,8 @@ main {
                 padding: 0.25em;
 
                 border: 2px solid #0F172A;
-                border-radius: 0%;
+                border-radius: 0px;
+                box-shadow: 0.2em 0.2em 0em 0em rgba(#0F172A,1);
 
                 h3 {
                     width: max-content;

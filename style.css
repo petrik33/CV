@@ -47,6 +47,9 @@ header h2 {
   margin-bottom: 0.75em;
   text-align: start;
 }
+header h2 #wat-header {
+  font-style: italic;
+}
 header section#about-me-contacts {
   display: flex;
   flex-direction: column;
@@ -133,7 +136,8 @@ main section#skills div#skill-boxes figure.skill {
   margin: 0 1.5em 1.5em 0;
   padding: 0.25em;
   border: 2px solid #0F172A;
-  border-radius: 0%;
+  border-radius: 0px;
+  box-shadow: 0.2em 0.2em 0em 0em #0f172a;
 }
 main section#skills div#skill-boxes figure.skill h3 {
   width: -webkit-max-content;
